@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "4da6a55a-ad40-486f-84bd-1e178affcd0a",
+		"name": "Desafio SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Titulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/filme/saga",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"filme",
+						"saga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8088/filme/{id}",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"filme",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descrição",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\":\"loren ipsun\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/filme/{id}",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"filme",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
